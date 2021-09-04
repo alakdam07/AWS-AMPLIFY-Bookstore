@@ -1,0 +1,30 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-alakbookstore-prod-135925-authRole",
+      "UnauthRoleArn": "arn:aws:iam::609846323971:role/amplify-alakbookstore-prod-135925-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::609846323971:role/amplify-alakbookstore-prod-135925-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-alakbookstore-prod-135925-deployment",
+      "UnauthRoleName": "amplify-alakbookstore-prod-135925-unauthRole",
+      "StackName": "amplify-alakbookstore-prod-135925",
+      "StackId": "arn:aws:cloudformation:us-east-1:609846323971:stack/amplify-alakbookstore-prod-135925/5e094180-fb5c-11eb-9b90-0ac12714be3f",
+      "AmplifyAppId": "d56iyj68u6lp0"
+    },
+    "categories": {
+      "auth": {
+        "alakbookstore5ef2030b": {}
+      },
+      "function": {
+        "processPayment": {
+          "deploymentBucketName": "amplify-alakbookstore-prod-135925-deployment",
+          "s3Key": "amplify-builds/processPayment-73555947316e77697355-build.zip"
+        },
+        "createOrder": {
+          "deploymentBucketName": "amplify-alakbookstore-prod-135925-deployment",
+          "s3Key": "amplify-builds/createOrder-36713752694546333152-build.zip"
+        }
+      }
+    }
+  }
+}
