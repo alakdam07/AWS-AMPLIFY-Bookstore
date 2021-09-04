@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "alakbookstore5ef2030b_identitypool_5ef2030b",
+    "identityPoolName": "bookstorev24bca23b2_identitypool_4bca23b2",
     "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "alakbo5ef2030b",
-    "userPoolName": "alakbookstore5ef2030b_userpool_5ef2030b",
+    "resourceNameTruncated": "bookst4bca23b2",
+    "userPoolName": "bookstorev24bca23b2_userpool_4bca23b2",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "alakbo5ef2030b_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "bookst4bca23b2_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "5ef2030b",
-    "resourceName": "alakbookstore5ef2030b",
+    "sharedId": "4bca23b2",
+    "resourceName": "bookstorev24bca23b2",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

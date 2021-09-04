@@ -33,6 +33,7 @@ const Admin = () => {
         author: "",
         price: "",
       });
+      window.location.reload(false);
     } catch (err) {
       console.log("error creating todo:", err);
     }

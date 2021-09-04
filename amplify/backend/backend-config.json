@@ -1,12 +1,12 @@
 {
   "auth": {
-    "alakbookstore5ef2030b": {
+    "bookstorev24bca23b2": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
-        "loginMechanism": [
+        "loginMechanisms": [
           "PREFERRED_USERNAME"
         ],
         "signupAttributes": [
@@ -24,18 +24,18 @@
     }
   },
   "storage": {
-    "alakbookstore": {
+    "alakbookstoreimage": {
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }
   },
   "function": {
-    "createOrder": {
+    "processPayment": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     },
-    "processPayment": {
+    "createOrder": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -50,7 +50,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authalakbookstore5ef2030b"
+              "userPoolId": "authbookstorev24bca23b2"
             }
           },
           "additionalAuthenticationProviders": [
@@ -58,7 +58,7 @@
               "authenticationType": "API_KEY",
               "apiKeyConfig": {
                 "apiKeyExpirationDays": 365,
-                "description": "Guest users can access the book"
+                "description": "Guest user can access the book details"
               }
             }
           ]

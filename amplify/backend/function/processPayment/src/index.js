@@ -1,6 +1,6 @@
 const { CognitoIdentityServiceProvider } = require("aws-sdk");
 const cognitoIdentityServiceProvider = new CognitoIdentityServiceProvider();
-const USER_POOL_ID = "us-east-1_taKE2ooEn";
+const USER_POOL_ID = "eu-west-1_aNdebEK0k";
 const stripe = require("stripe")(
   "sk_test_51JNYEcGLGfjve8ktBzSEOD37gLd6fGjzXOum1TvD7oZoiI0z3Yp8DHWgpI6LHaM614eaIut6JYHDVu5fg6CKlr4H00PL9ns3mX"
 );

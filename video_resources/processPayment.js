@@ -1,14 +1,18 @@
 const { CognitoIdentityServiceProvider } = require("aws-sdk");
 const cognitoIdentityServiceProvider = new CognitoIdentityServiceProvider();
-const USER_POOL_ID = "<userpool_id>";
-const stripe = require("stripe")("<strip_private_key>");
+const USER_POOL_ID = "us-east-1_taKE2ooEn";
+const stripe = require("stripe")(
+  "sk_test_51JNYEcGLGfjve8ktBzSEOD37gLd6fGjzXOum1TvD7oZoiI0z3Yp8DHWgpI6LHaM614eaIut6JYHDVu5fg6CKlr4H00PL9ns3mX"
+);
 
 const getUserEmail = async (event) => {
   const params = {
     UserPoolId: USER_POOL_ID,
-    Username: event.identity.claims.username
+    Username: event.identity.claims.username,
   };
-  const user = await cognitoIdentityServiceProvider.adminGetUser(params).promise();
+  const user = await cognitoIdentityServiceProvider
+    .adminGetUser(params)
+    .promise();
   const { Value: email } = user.UserAttributes.find((attr) => {
     if (attr.Name === "email") {
       return attr.Value;
@@ -31,7 +35,7 @@ exports.handler = async (event) => {
       amount: total * 100,
       currency: "usd",
       source: token,
-      description: `Order ${new Date()} by ${email}`
+      description: `Order ${new Date()} by ${username} with  ${email} email`,
     });
     return { id, cart, total, address, username, email };
   } catch (err) {

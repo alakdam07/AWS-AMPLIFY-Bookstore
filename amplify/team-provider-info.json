@@ -1,28 +1,28 @@
 {
   "prod": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-alakbookstore-prod-135925-authRole",
-      "UnauthRoleArn": "arn:aws:iam::609846323971:role/amplify-alakbookstore-prod-135925-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::609846323971:role/amplify-alakbookstore-prod-135925-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-alakbookstore-prod-135925-deployment",
-      "UnauthRoleName": "amplify-alakbookstore-prod-135925-unauthRole",
-      "StackName": "amplify-alakbookstore-prod-135925",
-      "StackId": "arn:aws:cloudformation:us-east-1:609846323971:stack/amplify-alakbookstore-prod-135925/5e094180-fb5c-11eb-9b90-0ac12714be3f",
-      "AmplifyAppId": "d56iyj68u6lp0"
+      "AuthRoleName": "amplify-bookstorev2-prod-82125-authRole",
+      "UnauthRoleArn": "arn:aws:iam::609846323971:role/amplify-bookstorev2-prod-82125-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::609846323971:role/amplify-bookstorev2-prod-82125-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-bookstorev2-prod-82125-deployment",
+      "UnauthRoleName": "amplify-bookstorev2-prod-82125-unauthRole",
+      "StackName": "amplify-bookstorev2-prod-82125",
+      "StackId": "arn:aws:cloudformation:eu-west-1:609846323971:stack/amplify-bookstorev2-prod-82125/f4d5b630-0d3f-11ec-b7f2-0271191fd09d",
+      "AmplifyAppId": "d3quk726wmamml"
     },
     "categories": {
       "auth": {
-        "alakbookstore5ef2030b": {}
+        "bookstorev24bca23b2": {}
       },
       "function": {
-        "processPayment": {
-          "deploymentBucketName": "amplify-alakbookstore-prod-135925-deployment",
-          "s3Key": "amplify-builds/processPayment-73555947316e77697355-build.zip"
-        },
         "createOrder": {
-          "deploymentBucketName": "amplify-alakbookstore-prod-135925-deployment",
-          "s3Key": "amplify-builds/createOrder-36713752694546333152-build.zip"
+          "deploymentBucketName": "amplify-bookstorev2-prod-82125-deployment",
+          "s3Key": "amplify-builds/createOrder-597441426149706d6a38-build.zip"
+        },
+        "processPayment": {
+          "deploymentBucketName": "amplify-bookstorev2-prod-82125-deployment",
+          "s3Key": "amplify-builds/processPayment-4a766b58597834745a30-build.zip"
         }
       }
     }

@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "alakbookstoreLambdaRole362e2df7",
+            "bookstorev2LambdaRole0e9a70d5",
             {
               "Fn::Join": [
                 "",
                 [
-                  "alakbookstoreLambdaRole362e2df7",
+                  "bookstorev2LambdaRole0e9a70d5",
                   "-",
                   {
                     "Ref": "env"
